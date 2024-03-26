@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "20231028-analiserankeamentoacoes"
+version = "0.1.0"
+description = "Com dados da Status Invest, rankear ações com metodologia da Matriz de decisão."
+authors = ["ylder <yldebran.santana@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "1.26.2"
+pandas = "2.1.3"
+python-dateutil = "2.8.2"
+pytz = "2023.3.post1"
+six = "1.16.0"
+tzdata = "2023.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

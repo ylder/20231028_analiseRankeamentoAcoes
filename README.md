@@ -1,8 +1,10 @@
 ## 1 Descrição do projeto
 
-Este módulo Python oferece uma solução para o rankeamento de ações com base em indicadores financeiros específicos. Utilizando as bibliotecas Pandas e NumPy para manipulação e análise de dados, as classes `Dados` e `Rankeamento` simplificam o processo de carregamento de dados a partir de arquivos CSV, aplicam uma tabela de esquema específica e realizam o rankeamento das ações com base em parâmetros configuráveis.
+A partir dos dados disponibilizados pela `Status Invest`, este módulo Python simples oferece uma solução para o rankeamento de ações com base em indicadores financeiros específicos.
 
-A base de dados utilizada foi extraída do site Status Invest e o método de avaliação foi aplicação da `Matriz de decisão` sobre alguns indicadores que comunicam a capacidade de geração de riqueza, crescimento e liquidez das empresas, as quais seus tickers a representam no mercado de capitais; dessa forma, a avaliação é apenas considerando dados contábeis e econômicos das organizações.
+Utilizando as bibliotecas Pandas e NumPy para manipulação e análise de dados, as classes `Dados` e `Rankeamento` simplificam o processo de carregamento de dados a partir do arquivo CSV, aplicam uma tabela de esquema específica e realizam o rankeamento das ações com base em parâmetros configuráveis.
+
+O método de avaliação aplicado foi `Matriz de decisão`, incide sobre alguns indicadores que comunicam a capacidade de geração de riqueza, crescimento e liquidez das empresas, as quais seus tickers a representam no mercado de capitais; dessa forma, a avaliação é apenas considerando dados contábeis e econômicos das organizações.
 
 ## 2 Ferramentas e técnicas utilizadas
 
@@ -50,7 +52,7 @@ A classe `Rankeamento` realiza o rankeamento das ações com base em indicadores
 
 ```python
 # Importando o módulo
-from seu_modulo import Dados, Rankeamento
+from src.module import Dados, Rankeamento
 
 # Criando uma instância da classe Dados
 dados = Dados("caminho/do/seu/arquivo.csv")
